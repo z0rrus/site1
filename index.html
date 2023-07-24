@@ -1,0 +1,115 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Кулинарные рецепты</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <style>
+
+        .button {
+            margin-top: 30px;
+        }
+
+        .button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+
+    <div id="menu">
+        <ul>
+            <li class="current"><a href="index.html"><b>Главная</b></a></li>
+            <li><a href="#"><b>Закуски</b></a></li>
+            <li><a href="#"><b>Супы</b></a></li>
+            <li><a href="#"><b>Вторые блюда</b></a></li>
+            <li><a href="#"><b>Десерты</b></a></li>
+            <li><a href="#"><b>Выпечка</b></a></li>
+            <li><a href="#"><b>Салаты</b></a></li>
+            <li><a href="#"><b>Напитки</b></a></li>
+        </ul>
+    </div>
+
+    <div id="dishes">
+
+        <h1>Популярные рецепты</h1>
+        <div class="dishes_box">
+            <a href="borsch.html"><img src="images/борщ.jpg" alt="Фото" /></a>
+            <h2>Борщ</h2>
+            <p><a href="borsch.html" target="_parent">Открыть рецепт</a></p>
+        </div>
+
+        <div class="dishes_box">
+            <a href="pasta.html"><img src="images/паста.jpg" alt="Фото" /></a>
+            <h2>Паста</h2>
+            <p><a href="pasta.html">Открыть рецепт</a></p>
+        </div>
+
+        <div class="dishes_box">
+            <a href="sirniki.html"><img src="images/сырники.jpg" alt="Фото" /></a>
+            <h2>Сырники</h2>
+            <p><a href="sirniki.html" target="_parent">Открыть рецепт</a></p>
+        </div>
+
+        <div class="dishes_box">
+            <a href="blini.html"><img src="images/блины.jpg" alt="Фото" /></a>
+            <h2>Блины</h2>
+            <p><a href="blini.html">Открыть рецепт</a></p>
+        </div>
+
+        <div class="cleaner">&nbsp;</div>
+
+    </div>
+
+    <div id="content">
+        <span class="top"></span>
+        <div id="innter_content">
+
+            <div id="content_left">
+                <h1>Советы</h1>
+                <img src="images/фрукты.png" alt="image">
+                <p><a href="" target="_parent">11 практических рекомендаций по поводу правильного питания</a></p>
+                <p>21 век - век активной пропогады худобы. В рекламах по телевизору, на обложках журналов, в социальных сетях - абсолютно везде показываются девушки и женщины...</p>
+
+                <a href="#">Читать далее</a>
+
+
+
+                <div class="cleaner_with_height">&nbsp;</div>
+
+            </div>
+
+            <div class="cleaner">&nbsp;</div>
+        </div>
+        <div class="cleaner" style="background: #fff;">&nbsp;</div>
+    </div>
+
+
+    <div class="button">
+        <a href="svyaz.php" class="back-button">Обратная связь</a>
+    </div>
+
+    <div id="footer">
+
+        by <a title="" target="_parent">Ruslan Zaripov AA-22-08</a></div>
+</div>
+
+
+<script>
+    if ('serviceWorker' in navigation) {
+        navigator.serviceWorker.register('/sw.js', {scope: '/'});
+    }
+</script>
+
+</body></html>
